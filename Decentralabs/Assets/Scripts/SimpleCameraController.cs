@@ -267,7 +267,6 @@ namespace UnityTemplateProjects
 
         bool IsCameraRotationAllowed()
         {
-            return true;
 #if ENABLE_INPUT_SYSTEM
             bool canRotate = Mouse.current != null ? Mouse.current.rightButton.isPressed : false;
             canRotate |= Gamepad.current != null ? Gamepad.current.rightStick.ReadValue().magnitude > 0 : false;

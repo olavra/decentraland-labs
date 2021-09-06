@@ -11,7 +11,7 @@ public class Grid : MonoBehaviour
     public GameObject player;
 
     public GameObject UIplayerCoords;
-    public GameObject compassUI;
+    public GameObject compass;
 
     public int gridSize = 50;
     private GameObject[][] grid;
@@ -59,7 +59,10 @@ public class Grid : MonoBehaviour
     
     public void CalculateCompass()
     {
-        this.compassUI.transform.rotation = Quaternion.Euler(new Vector3(0,0,-player.transform.rotation.eulerAngles.y));
+        this.compass.transform.rotation = Quaternion.Euler(0, 0, -player.transform.rotation.eulerAngles.y);
+
+        //this.compass.transform.rotation = Quaternion.Slerp(this.transform.rotation, rotation, Time.deltaTime * 5.0f);
+        //this.compass.transform.rotation = Quaternion.Euler(new Vector3(0,0,));
     }
 
     // Update is called once per frame
