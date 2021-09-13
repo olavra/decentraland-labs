@@ -3,7 +3,12 @@ guid: 195c5bc656304d74a93acb7b18728503
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MiniTown_MAT.006
+    second: {fileID: 2100000, guid: dda1e64ca9875fc4891552024fb740d9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
